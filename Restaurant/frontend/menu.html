@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .heading {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- Logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center py-5 px-2 text-gray-700">
+                            <span class="font-bold text-xl heading">Matata Restaurant</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Primary Nav -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="about.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">About Us</a>
+                    <a href="menu.html" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-bold">Menu</a>
+                    <a href="reservation.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Reservation</a>
+                    <a href="contact.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+                <!-- Mobile button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About Us</a>
+            <a href="menu.html" class="block py-2 px-4 text-sm hover:bg-gray-200 font-bold">Menu</a>
+            <a href="reservation.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Reservation</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center py-32" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-white mb-4 heading">Our Menu</h1>
+                <p class="text-xl text-white mb-8">Discover our culinary creations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Sections -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Starters -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">Starters</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Bruschetta</h3>
+                            <p class="text-gray-600">Toasted bread topped with tomatoes, garlic, and fresh basil</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$9.99</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Calamari</h3>
+                            <p class="text-gray-600">Crispy fried squid served with lemon aioli</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$12.99</span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Caprese Salad</h3>
+                            <p class="text-gray-600">Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$10.99</span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Stuffed Mushrooms</h3>
+                            <p class="text-gray-600">Mushroom caps filled with herbed cream cheese and breadcrumbs</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$11.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mains -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">Main Courses</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Filet Mignon</h3>
+                            <p class="text-gray-600">8oz tender beef filet with roasted vegetables and red wine reduction</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$34.99</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Grilled Salmon</h3>
+                            <p class="text-gray-600">Fresh Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$28.99</span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Chicken Parmesan</h3>
+                            <p class="text-gray-600">Breaded chicken topped with marinara and mozzarella, served with pasta</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$22.99</span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Vegetable Risotto</h3>
+                            <p class="text-gray-600">Creamy Arborio rice with seasonal vegetables and Parmesan</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$19.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">Desserts</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Chocolate Lava Cake</h3>
+                            <p class="text-gray-600">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$9.99</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Crème Brûlée</h3>
+                            <p class="text-gray-600">Classic vanilla custard with caramelized sugar topping</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$8.99</span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Tiramisu</h3>
+                            <p class="text-gray-600">Coffee-flavored Italian dessert with layers of ladyfingers and mascarpone</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$10.99</span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Cheesecake</h3>
+                            <p class="text-gray-600">New York-style cheesecake with berry compote</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$9.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div>
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">Drinks</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">House Red Wine</h3>
+                            <p class="text-gray-600">Glass of our signature Cabernet Sauvignon</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$12.99</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Craft Cocktails</h3>
+                            <p class="text-gray-600">Seasonal craft cocktails made with premium spirits</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$14.99</span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Local Beer</h3>
+                            <p class="text-gray-600">Selection of local craft beers</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$7.99</span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex justify-between items-start border-b border-gray-200 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1 heading">Non-Alcoholic</h3>
+                            <p class="text-gray-600">Fresh juices, sodas, and specialty mocktails</p>
+                        </div>
+                        <span class="font-bold text-gray-800">$5.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-yellow-500">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6 heading">Ready to Experience Our Cuisine?</h2>
+            <p class="text-white mb-8 text-xl">Reserve your table today and enjoy an unforgettable dining experience.</p>
+            <a href="reservation.html" class="inline-block bg-white hover:bg-gray-100 text-yellow-600 font-bold py-3 px-8 rounded-lg transition duration-300">Make a Reservation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading">About Us</h3>
+                    <p class="text-gray-400">A modern restaurant offering authentic cuisine with a contemporary twist, located in the heart of the city.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><

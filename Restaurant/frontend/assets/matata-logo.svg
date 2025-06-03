@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <style>
+    .text { font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; fill: #333; }
+    .chef { fill: #e53e3e; }
+  </style>
+  <rect width="300" height="100" fill="none"/>
+  <text x="150" y="40" text-anchor="middle" class="text">Matata Restaurant</text>
+  <g class="chef" transform="translate(120,60) scale(0.8)">
+    <path d="M20 10c0-5.5 4.5-10 10-10s10 4.5 10 10v5h-5v-5c0-2.8-2.2-5-5-5s-5 2.2-5 5v5h-5v-5z"/>
+    <path d="M5 25v5h30v-5c0-5.5-4.5-10-10-10h-10c-5.5 0-10 4.5-10 10z"/>
+    <path d="M10 30v15h20v-15h-20z"/>
+    <circle cx="15" cy="40" r="2" fill="#fff"/>
+    <circle cx="25" cy="40" r="2" fill="#fff"/>
+    <path d="M15 45c0 1.1.9 2 2 2s2-.9 2-2h-4z"/>
+  </g>
+</svg>

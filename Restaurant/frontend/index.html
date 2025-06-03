@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .heading {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- Logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700">
+                            <span class="font-bold text-xl heading">Matata Restaurant</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Primary Nav -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="about.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">About Us</a>
+                    <a href="menu.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Menu</a>
+                    <a href="reservation.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Reservation</a>
+                    <a href="contact.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+                <!-- Mobile button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About Us</a>
+            <a href="menu.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Menu</a>
+            <a href="reservation.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Reservation</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center py-32" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-white mb-4 heading">Welcome to Our Restaurant</h1>
+                <p class="text-xl text-white mb-8">Experience culinary excellence in the heart of the city</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="menu.html" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">View Menu</a>
+                    <a href="reservation.html" class="bg-transparent hover:bg-white text-white hover:text-gray-800 font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300">Make Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">Our Story</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Restaurant Interior" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="w-full md:w-1/2 px-4">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 heading">A Culinary Journey</h3>
+                    <p class="text-gray-600 mb-4">Founded in 2010, our restaurant has been serving authentic cuisine with a modern twist. Our chef brings over 20 years of international experience to create memorable dining experiences.</p>
+                    <p class="text-gray-600 mb-6">We source our ingredients locally whenever possible, supporting regional farmers and producers while ensuring the freshest quality for our guests.</p>
+                    <a href="about.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Items -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">Featured Dishes</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Dish 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 heading">Signature Dish</h3>
+                        <p class="text-gray-600 mb-4">Our chef's special creation featuring locally sourced ingredients.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$24.99</span>
+                            <a href="menu.html" class="text-yellow-500 hover:text-yellow-600 font-bold">View All</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1081&q=80" alt="Dish 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 heading">Seasonal Special</h3>
+                        <p class="text-gray-600 mb-4">A rotating selection of dishes highlighting seasonal ingredients.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$19.99</span>
+                            <a href="menu.html" class="text-yellow-500 hover:text-yellow-600 font-bold">View All</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=710&q=80" alt="Dish 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 heading">Chef's Dessert</h3>
+                        <p class="text-gray-600 mb-4">A decadent dessert that perfectly concludes your dining experience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$12.99</span>
+                            <a href="menu.html" class="text-yellow-500 hover:text-yellow-600 font-bold">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 heading">What Our Guests Say</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Guest 1" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-yellow-500">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The food was absolutely incredible! Every dish was prepared with such care and attention to detail. The service was impeccable too."</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guest 2" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-yellow-500">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"One of the best dining experiences I've had in years. The ambiance, the food, the wine pairing - everything was perfect."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-yellow-500">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6 heading">Ready to Experience Our Cuisine?</h2>
+            <p class="text-white mb-8 text-xl">Reserve your table today and enjoy an unforgettable dining experience.</p>
+            <a href="reservation.html" class="inline-block bg-white hover:bg-gray-100 text-yellow-600 font-bold py-3 px-8 rounded-lg transition duration-300">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading">About Us</h3>
+                    <p class="text-gray-400">A modern restaurant offering authentic cuisine with a contemporary twist, located in the heart of the city.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="menu.html" class="text-gray-400 hover:text-white transition duration-300">Menu</a></li>
+                        <li><a href="reservation.html" class="text-gray-400 hover:text-white transition duration-300">Reservation</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0
